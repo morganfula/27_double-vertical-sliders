@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,8 +6,18 @@
   padding: 0;
 }
 
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+    helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial,
+    sans-serif;
+}
+
+.helvetica {
+  font-family: 'helvetica neue', helvetica, sans-serif;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
   height: 100vh;
 }
 
@@ -38,13 +48,16 @@ body {
       width: 80%;
       height: 70px;
       position: relative;
+      bottom: 5%;
       overflow: hidden;
       span {
         position: absolute;
-        font-size: 40px;
-        margin-bottom: 10px;
+        // font-size: 35px;
         margin-top: -30px;
         line-height: 4.2rem;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 1px;
       }
     }
   }
@@ -78,19 +91,20 @@ body {
       position: absolute;
       top: 50%;
       left: 35%;
+      // width: 0%;
       z-index: 100;
     }
 
     .up-button {
       transform: translateY(-100%);
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
+      // border-top-right-radius: 15px;
+      // border-bottom-right-radius: 15px;
     }
 
     .down-button {
       transform: translateX(-100%);
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
+      // border-top-left-radius: 15px;
+      // border-bottom-left-radius: 15px;
     }
   }
 }
