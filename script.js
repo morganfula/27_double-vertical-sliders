@@ -35,3 +35,19 @@ const changeSlide = (direction) => {
     ActiveSlideIndex * sliderHeight
   }px)`;
 };
+
+gsap.to('.title', {
+  duration: 1,
+  opacity: 1,
+  yPercent: 50,
+  ease: 'power4',
+  stagger: 0.1,
+});
+
+gsap.to('p', {
+  duration: 1,
+  opacity: 1,
+  yPercent: 100,
+  ease: 'power4',
+  stagger: 0.1,
+});
